@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&display=swap');
+
+body,html {
+	  margin:0;
+	  padding:0;
+	  border: none;
+	  font-family: 'Satoshi', sans-serif;
+	  background-color: black;
+	  color: white;
+	}
+	
+nav{
+	display: flex;
+	flex-wrap: nowrap;
+	position: fixed;
+	top: 12px;
+	left: 0;
+	right: 0;
+	justify-content: space-evenly;
+	font-size: 2.85vw;
+	font-weight: 700;
+	text-align: center;
+	z-index: 1;
+	line-height: 30px;
+}
+
+nav a{
+	padding: 2px;
+}
+
+.underline{
+	text-decoration: underline;
+}
+h3{
+	font-size: 17px;
+}
+p{
+	font-size: 16px;
+	line-height: 20px;
+	font-family: 'General Sans', sans-serif;
+	font-weight: 400;
+}
+
+.small-text{
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: .75rem;
+	color: #b2b2b2;
+	font-weight: 500;
+}
+a:link {
+	color: white;
+	text-decoration: none;
+}
+	
+a:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+a:visited {
+	color: white;
+}
+
+hr{
+	border-color: #777777;
+}
+
+footer{
+	width: 90%;
+	max-width: 850px;
+	margin: auto;
+	padding-top: 20px;
+}
+
+.cards{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-content: center;
+	max-width: 900px;
+	margin: auto;
+}
+
+.cards div{
+	width: 235px;
+	text-align: justify;
+	text-justify: inter-word;
+	padding: 16px;
+	
+}
+
+.cards img{
+	max-width: 100%;
+}
+
+.secondary-page{
+	margin-top: 7%;
+}
+
+.blue-link{
+	color: #0096c7;
+}
+
+#hero{
+	height: 92vh;
+	background:linear-gradient(90deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.05) 100%), url(../img/wesleyan-north.jpeg);
+	background-size: cover;
+	border:30px solid black;
+}
+
+#main-title{
+	position: absolute;
+	font-weight: 900;
+	font-size: 15vw;
+	line-height: 16vw;
+	top: 12%;
+	left: 8%;
+}
+
+#intro{
+	width: 70%;
+	max-width: 655px;
+	margin: auto;
+	text-align: justify;
+	text-justify: inter-character;
+	padding-bottom: 40px;
+}
+
+#vimeo-player{
+	padding:56.25% 0 0 0;
+	position:relative;
+	margin: auto;
+	width: 90%;
+	max-width: 850px;
+}
+
+#footer-content{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0px 30px;
+}
+
+#contact-page{
+	margin: 250px 0px;
+	text-align: center;
+}
+
+@media screen and (max-width: 550px){
+	#hero{
+		border: 15px solid black;
+		height: 96vh;
+	}
+	#main-title{
+		top: 25%;
+		left: 4vw;
+		font-size: 20.5vw;
+		line-height: 110px;
+	}
+	.cards div{
+		width: 90%;
+		text-align: left;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	nav{
+		font-size: 2.2vw;
+	}
+	#main-title{
+		font-size: 11vw;
+		width: 12px;
+		line-height: 160px;
+		top: 18%;
+		left: 16%;
+	}
+	#hero{
+		background-position: 80% 30%;
+	}
+	#intro{
+		margin-top: 40px;
+		padding-bottom: 60px;
+	}
+	#vimeo-player{
+		margin-top: -150px;
+		margin-bottom: -100px;
+	}
+}
