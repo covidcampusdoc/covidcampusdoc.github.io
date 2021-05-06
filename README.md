@@ -1,3 +1,3 @@
 # COVID CAMPUS DOCUMENTARY
 
-[👉](http://covidcampusdoc.com)
+[Visit the site 👉](http://covidcampusdoc.com)
